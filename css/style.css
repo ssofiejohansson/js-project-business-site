@@ -1,0 +1,71 @@
+body {
+  margin: 0 auto;
+
+}
+
+.navbar {
+  padding: 20px;
+  background: lightgrey;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 50px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: red;
+  margin: 10px;
+
+}
+
+main {
+  padding: 20px;
+}
+
+/* makes the parent container a grid */
+.grid-parent {
+  border: 1px solid red;
+  padding: 20px;
+
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto;
+  gap: 10px;
+}
+
+.grid-child {
+  border: 1px solid blue;
+
+}
+
+.grid-1 {
+  grid-column: span 2;
+
+}
+
+.grid-2 {
+  grid-column: span 4;
+
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+
+}
+
+footer {
+  border: 1px solid black;
+}
+
+.footer-1 {
+  background: red;
+}
+
+.footer-2 {
+  background: blue;
+}
