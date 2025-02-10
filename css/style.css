@@ -5,12 +5,11 @@ body {
 }
 
 header {
-  background-image: url('/img/header-img.jpg');
+  background-image: url('/img/header.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 250px;
-
+  height: 300px;
 }
 
 .navbar {
@@ -32,7 +31,7 @@ header {
 }
 
 main {
-  padding: 40px 20px;
+  padding: 60px 20px;
 }
 
 /* Fonts */
@@ -40,8 +39,13 @@ main {
 h1 {
   font-family: 'Darumadrop One', Helvetica, sans-serif;
   text-transform: uppercase;
-  font-size: 30px;
+  font-size: 35px;
   margin: 0px;
+}
+
+h3 {
+  color: #f5f5f5;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 h2,
@@ -70,7 +74,6 @@ p {
 }
 
 /* how the cards span on mobile*/
-.grid-1,
 .grid-2,
 .grid-3 {
   grid-column: span 4;
@@ -106,24 +109,38 @@ p {
   width: 70px;
 }
 
+i {
+  color: #000000;
+  font-size: 25px;
+  padding: 5px;
+}
+
+i:hover {
+  opacity: 0.5;
+}
+
 footer h4 {
   margin: 0px;
 }
 
 footer {
   font-family: 'Roboto', Helvetica, sans-serif;
-  background-image: url('/img/footer-img.jpg');
+  background-image: url('/img/footer.jpg');
   background-size: cover;
   background-position: right;
   background-repeat: no-repeat;
   padding: 20px 40px;
 }
 
+.icons {
+  display: flex;
+}
+
 
 @media (min-width: 667px) {
 
   header {
-    height: 500px;
+    height: 400px;
   }
 
   .navbar {
@@ -147,7 +164,6 @@ footer {
     gap: 40px;
   }
 
-  .grid-1,
   .grid-2 {
     grid-column: span 6;
   }
@@ -159,7 +175,6 @@ footer {
   h2,
   h3 {
     font-size: 35px;
-    margin: -50px 0px 10px 0px;
   }
 
   footer p {
@@ -169,11 +184,6 @@ footer {
 
 @media (min-width: 668px) and (max-width: 1024px) {
 
-  header {
-    height: 400px;
-
-  }
-
   .grid-parent {
     padding: 40px;
     display: grid;
@@ -181,7 +191,6 @@ footer {
     gap: 40px;
   }
 
-  .grid-1,
   .grid-2,
   .grid-3 {
     grid-column: span 2;
@@ -190,7 +199,6 @@ footer {
   footer p {
     width: 80%;
   }
-
 }
 
 @media (min-width: 1201px) {
