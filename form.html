@@ -1,0 +1,55 @@
+<style>
+  body {
+    background-color: lightgrey;
+  }
+
+  input {
+    font-size: 20px;
+  }
+
+  label {
+    display: flex;
+    border-bottom: 1px solid #f0f5fa;
+    padding: 15px;
+  }
+
+  form {
+    border: 1px solid #000;
+    border-radius: 4px;
+    padding: 20px;
+  }
+
+  h2 {
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-top: 0;
+  }
+
+  fieldset {
+    border: none;
+    padding: 0;
+    background-color: white;
+    border-radius: 4px;
+
+  }
+</style>
+
+<form action="http://httpbin.org/anything" method="POST">
+  <fieldset>
+    <label>Name:
+      <input type="text" name="name" required></label>
+    <label>Adress:
+      <input type="text" name="adress" required></label>
+    <label>
+      Country:
+      <select name="country">
+        <option value="SE">Sweden</option>
+        <option value="US">USA</option>
+        <option value="UK">United Kingdom</option>
+      </select>
+    </label>
+
+
+    <button type="submit">Order</button>
+  </fieldset>
+</form>
