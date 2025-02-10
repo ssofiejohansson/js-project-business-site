@@ -1,56 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Oswald:wght@200..700&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  margin: 0 auto;
+}
+
 header {
   background-image: url('/img/header-img.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 400px;
+  height: 250px;
+
 }
 
 .navbar {
   display: none;
 }
 
-.logo {
-  width: 80px;
-}
-
 .nav-links a {
   text-decoration: none;
-  color: red;
+  color: #000000;
+  font-family: 'Roboto', Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 3px;
+  padding-top: 5px;
+}
+
+.nav-links a:hover {
+  border-top: 1px solid #000000;
 }
 
 main {
-  padding: 20px;
+  padding: 40px 20px;
 }
+
+/* Fonts */
+
+h1 {
+  font-family: 'Darumadrop One', Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-size: 30px;
+  margin: 0px;
+}
+
+h2,
+h3,
+h4 {
+  font-family: 'Darumadrop One', Helvetica, sans-serif;
+  font-size: 40px;
+  text-transform: uppercase;
+  margin: -60px 0px 10px 0px;
+
+}
+
+p {
+  font-family: 'Roboto', Helvetica, sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+
 
 /* makes the parent container a grid */
 .grid-parent {
-  border: 1px solid red;
   padding: 20px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
 }
 
-.grid-1 {
-  grid-column: span 4;
-}
-
-
-.grid-2 {
-  grid-column: span 4;
-
-}
-
+/* how the cards span on mobile*/
+.grid-1,
+.grid-2,
 .grid-3 {
-  grid-column: span 2;
+  grid-column: span 4;
 }
 
+
+/* using flex within the container */
 .flex-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
 }
 
 .card {
@@ -60,6 +91,7 @@ main {
 
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  opacity: 0.9;
 }
 
 .card-img {
@@ -74,55 +106,96 @@ main {
   width: 70px;
 }
 
-
-
-.footer-1 {
-  background: lightgrey;
-  padding: 10px;
+footer h4 {
+  margin: 0px;
 }
 
-.footer-2 {
-  padding: 10px;
+footer {
+  font-family: 'Roboto', Helvetica, sans-serif;
+  background-image: url('/img/footer-img.jpg');
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  padding: 20px 40px;
 }
 
-@media (min-width: 600px) {
 
-  body {
-    margin: 0 auto;
-    font-family: 'Courier New', Courier, monospace;
+@media (min-width: 667px) {
+
+  header {
+    height: 500px;
   }
 
   .navbar {
-    background-color: #FFFFFF;
     padding: 20px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
   }
 
   .nav-links a {
-    text-decoration: none;
-    color: red;
     margin-left: 20px;
   }
 
+  main {
+    padding: 60px 20px 80px;
+  }
+
   .grid-parent {
-    border: 1px solid green;
-    padding: 60px 80px;
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    gap: 50px;
-
+    padding: 20px;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 40px;
   }
 
-  .grid-1 {
-    grid-column: span 3;
-
-  }
-
+  .grid-1,
   .grid-2 {
-    grid-column: span 4;
+    grid-column: span 6;
+  }
 
+  .grid-3 {
+    grid-column: span 3;
+  }
+
+  h2,
+  h3 {
+    font-size: 35px;
+    margin: -50px 0px 10px 0px;
+  }
+
+  footer p {
+    width: 50%;
+  }
+}
+
+@media (min-width: 668px) and (max-width: 1024px) {
+
+  header {
+    height: 400px;
+
+  }
+
+  .grid-parent {
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+  }
+
+  .grid-1,
+  .grid-2,
+  .grid-3 {
+    grid-column: span 2;
+  }
+
+  footer p {
+    width: 80%;
+  }
+
+}
+
+@media (min-width: 1201px) {
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
   }
 }
