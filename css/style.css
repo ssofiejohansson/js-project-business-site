@@ -4,12 +4,12 @@ body {
   margin: 0 auto;
 }
 
-
-nav {
-  background-image: url('/img/nav.jpg');
+header {
+  background-image: url('/img/footer.jpg');
   background-size: cover;
-  background-position: top;
+  background-position: center;
   background-repeat: no-repeat;
+  height: 50vh;
 }
 
 .navbar {
@@ -17,22 +17,11 @@ nav {
 }
 
 .nav-links a {
-  text-decoration: none;
-  color: #000000;
-  font-family: 'Roboto', Helvetica, sans-serif;
-  text-transform: uppercase;
-  font-weight: 400;
-  letter-spacing: 3px;
-  padding-top: 5px;
   display: none;
 }
 
-.nav-links a:hover {
-  border-top: 1px solid #000000;
-}
-
-main {
-  padding: 80px 20px;
+.main {
+  padding: 80px 10px;
 }
 
 /* Fonts */
@@ -44,19 +33,19 @@ h1 {
   margin: 0px;
 }
 
-h3 {
-  color: #fff;
-  text-shadow: 2px 2px 4px #000000;
-}
-
 h2,
 h3,
 h4 {
   font-family: 'Darumadrop One', Helvetica, sans-serif;
   font-size: 40px;
   text-transform: uppercase;
-  margin: -60px 0px 10px 0px;
+  margin: -70px 0px 10px 0px;
+}
 
+h3 {
+  color: #fff;
+  font-size: 45px;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 p {
@@ -65,6 +54,41 @@ p {
   letter-spacing: 0.5px;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.button {
+  appearance: none;
+  border: 2px solid black;
+  color: #000000;
+  padding: 5px 20px 10px;
+  background-color: transparent;
+  font-size: 20px;
+  font-family: 'Darumadrop One', Helvetica, sans-serif;
+  margin: 20px 10px 20px;
+  text-transform: uppercase;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.2s;
+}
+
+.button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+i {
+  color: #000000;
+  font-size: 25px;
+  padding: 5px;
+}
+
+i:hover {
+  opacity: 0.5;
+}
+
+/* First part of page with cards */
 
 /* makes the parent container a grid */
 .grid-parent {
@@ -79,7 +103,6 @@ p {
 .grid-3 {
   grid-column: span 4;
 }
-
 
 /* using flex within the container */
 .flex-container {
@@ -106,56 +129,60 @@ p {
   padding: 2px 16px;
 }
 
-.button {
-  appearance: none;
-  border: 2px solid black;
-  padding: 5px 20px 10px;
-  background-color: transparent;
-  font-size: 24px;
-  font-family: 'Darumadrop One', Helvetica, sans-serif;
-  margin: 10px 0px 20px;
-  text-transform: uppercase;
+/* second part of page with instructions for each project */
+
+.project-section {
+  background-color: #ececec;
+  margin: 0;
 }
 
-.button:hover {
-  cursor: pointer;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.2s;
+.projects {
+  display: flex;
+  flex-direction: column-reverse;
+  flex-wrap: wrap;
 }
 
-i {
+.project-img,
+.project-text {
+  flex: 1;
+}
+
+.project-text {
+  padding: 40px;
+}
+
+.projects h3,
+h4 {
   color: #000000;
-  font-size: 25px;
-  padding: 5px;
+  font-size: 35px;
+  text-shadow: none;
+  margin: 0;
 }
 
-i:hover {
-  opacity: 0.5;
+.form-section {
+  padding: 30px;
 }
+
+/* footer */
 
 footer h4 {
-  margin: 0px;
+  margin: 0;
 }
 
 footer {
-  font-family: 'Roboto', Helvetica, sans-serif;
-  background-image: url('/img/footer.jpg');
+  /* font-family: 'Roboto', Helvetica, sans-serif;
+  background-image: url('/img/nav.jpg');
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
+  background-color: #ececec;
   padding: 40px;
-  height: 700px;
 }
 
 .icons {
   display: flex;
 }
 
-
 @media (min-width: 667px) {
-
-  header {
-    height: 100px;
-  }
 
   .navbar {
     display: flex;
@@ -164,11 +191,11 @@ footer {
   }
 
   .nav-links a {
-    margin-left: 20px;
+    margin-left: 30px;
     display: inline;
   }
 
-  main {
+  .card-section {
     padding: 60px 20px 80px;
   }
 
@@ -186,19 +213,17 @@ footer {
     grid-column: span 3;
   }
 
-  h2,
-  h3 {
-    font-size: 35px;
-  }
-
-  footer {
-    height: 600px;
-    background-position: center;
-  }
-
   footer p {
     width: 60%;
   }
+
+  .projects {
+
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+
 }
 
 @media (min-width: 668px) and (max-width: 1024px) {
@@ -223,10 +248,14 @@ footer {
   footer p {
     width: 90%;
   }
+
 }
 
 @media (min-width: 1201px) {
-  main {
+
+  .card-section,
+  .projects,
+  .form-section {
     max-width: 1200px;
     margin: 0 auto;
   }
