@@ -20,11 +20,7 @@ header {
   display: none;
 }
 
-/* .main {
-  padding: 80px 10px;
-} */
-
-/* Fonts */
+/* Texts and button styling */
 
 h1 {
   margin: 0px;
@@ -57,12 +53,12 @@ a {
   appearance: none;
   border: 2px solid black;
   color: #000000;
+  text-transform: uppercase;
   padding: 5px 20px 10px;
   background-color: transparent;
-  font-size: 20px;
+  font-size: 18px;
   font-family: 'Darumadrop One', Helvetica, sans-serif;
   margin: 10px 10px 20px;
-  text-transform: uppercase;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   transition: 0.2s;
 }
@@ -77,14 +73,15 @@ a {
 
 /* makes the parent container a grid */
 .grid-parent {
-  padding: 20px;
+  padding: 20px 20px 40px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 15px;
 }
 
 /* how the cards span on mobile*/
-/* I am very aware the class names here are not used correct, but it seemed like too much work to change halfway through */
+
+/* I am very aware the class names here are not used correct, next project I will consider this from the start */
 .grid-2 {
   grid-column: span 4;
 }
@@ -121,7 +118,7 @@ a {
 /* second part of page with instructions for each project */
 
 .project-section {
-  background-color: #ececec;
+  background-color: #f9f9f9;
   padding: 0;
   margin: 0;
 }
@@ -129,13 +126,7 @@ a {
 .projects {
   display: flex;
   flex-direction: column;
-
 }
-
-/* .project-img{
-  margin:0;
-  padding: 0;
-} */
 
 .project-text {
   padding: 30px;
@@ -155,6 +146,41 @@ h4 {
   padding: 30px;
 }
 
+/* styling of form */
+
+form {
+  font-family: Roboto;
+  border: 1px solid #ececec;
+
+
+}
+
+fieldset {
+  border: none;
+  padding: 20px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 10px 0px;
+  margin: 5px 0px;
+
+}
+
+input,
+textarea {
+  font-size: 16px;
+  border: 1px solid #ececec;
+  outline: none;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+
+
 /* footer */
 
 footer h4 {
@@ -162,8 +188,8 @@ footer h4 {
 }
 
 footer {
-  background-color: #ececec;
-  padding: 20px;
+  background-color: #f9f9f9;
+  padding: 30px;
 }
 
 .icons {
@@ -180,6 +206,8 @@ i:hover {
   opacity: 0.5;
 }
 
+/* Desktop screen size */
+
 @media (min-width: 667px) {
 
   header {
@@ -190,7 +218,6 @@ i:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
   }
 
   .nav-links a {
@@ -199,11 +226,10 @@ i:hover {
   }
 
   .card-section {
-    padding: 60px 20px 80px;
+    padding: 40px 10px;
   }
 
   .grid-parent {
-    /* padding: 10px; */
     grid-template-columns: repeat(12, 1fr);
     gap: 20px;
   }
@@ -223,8 +249,9 @@ i:hover {
   .projects {
     flex-direction: row;
   }
-
 }
+
+/* Tablet screen size */
 
 @media (min-width: 668px) and (max-width: 1024px) {
 
@@ -251,15 +278,9 @@ i:hover {
     grid-column: span 2;
   }
 
-  /* second part of page with instructions for each project */
-
   .project-img,
   .project-text {
     flex: 1;
-  }
-
-  footer p {
-    width: 70%;
   }
 
 }

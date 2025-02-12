@@ -32,7 +32,7 @@
   </header>
 
   <main>
-    <div class="card-section">
+    <section class="card-section">
       <div class="grid-parent">
 
         <div class="grid-2 flex-container">
@@ -152,10 +152,11 @@
           </div>
         </div>
 
-      </div>
-    </div>
 
-    <div class="project-section">
+      </div>
+    </section>
+
+    <section class="project-section">
       <div
         class="projects"
         id="project-1"
@@ -184,9 +185,7 @@
           <p> Step 5:</p>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis molestiae dolores est
             repellat asperiores itaque architecto animi.</p>
-          <p> Step 6:</p>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis molestiae dolores est
-            repellat asperiores itaque architecto animi.</p>
+          <a href="#contact"> <button class="button">Get in touch</button></a>
 
         </div>
       </div>
@@ -216,24 +215,56 @@
           <p> Step 4:</p>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis molestiae dolores est
             repellat asperiores itaque architecto animi.</p>
-          <p> Step 5:</p>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis molestiae dolores est
-            repellat asperiores itaque architecto animi.</p>
-          <p> Step 6:</p>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis molestiae dolores est
-            repellat asperiores itaque architecto animi.</p>
+          <a href="#contact"> <button class="button">Get in touch</button></a>
 
         </div>
       </div>
 
-    </div>
+    </section>
 
-    <div class="form-section">
-      <div>
-        <p> Here will be a contact form to leave comments and feeback on the different projects.</p>
-        <!-- Including: name, email, select what project (#1-#10), textarea etc. Same design as buttons on input fields. -->
-      </div>
-    </div>
+    <section
+      class="form-section"
+      id="contact"
+    >
+      <p> Here will be a contact form to leave comments and feeback on the different projects.</p>
+      <!-- Including: name, email, select what project (#1-#10), textarea etc. Same design as buttons on input fields. -->
+
+      <form
+        action="http://httpbin.org/anything"
+        method="POST"
+      >
+        <fieldset>
+          <label>Name
+            <input
+              type="text"
+              name="name"
+              required
+            ></label>
+          <label>Email
+            <input
+              type="text"
+              name="email"
+              required
+            ></label>
+          <label> Choose a project: #1-#10 <br> (Checkboxes or Radio buttons)
+
+
+          </label>
+          <label>Message
+            <textarea
+              type="text"
+              required
+            ></textarea>
+          </label>
+          <button
+            class="button"
+            type="submit"
+          >Submit</button>
+        </fieldset>
+      </form>
+
+
+    </section>
 
   </main>
 
