@@ -1,4 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/* html {
+  scroll-behavior: smooth;
+} */
+
+* {
+  box-sizing: border-box;
+}
 
 body {
   margin: 0 auto;
@@ -20,32 +26,38 @@ header {
   display: none;
 }
 
+.logo {
+  max-width: 180px;
+}
+
 /* Texts and button styling */
 
-h1 {
+/* h1 {
   margin: 0px;
-}
+} */
 
 h1,
 h2,
-h3,
 h4 {
   font-family: 'Darumadrop One', Helvetica, sans-serif;
+  font-weight: bold;
   font-size: 35px;
   text-transform: uppercase;
 }
 
 h3 {
+  font-family: 'Shadows Into Light', Helvetica, sans-serif;
   color: #fff;
-  font-size: 45px;
+  font-size: 65px;
   text-shadow: 2px 2px 4px #000000;
-  margin: -70px 0px 10px 0px;
+  margin: -90px 0px 10px 0px;
 }
 
 p,
 a {
   font-family: 'Roboto', Helvetica, sans-serif;
   text-decoration: none;
+  letter-spacing: 0.4px;
   color: black;
 }
 
@@ -142,22 +154,17 @@ h4 {
 
 /* Last section with the form */
 
-.form-section {
-  padding: 30px;
-}
-
 /* styling of form */
 
 form {
-  font-family: Roboto;
-  border: 1px solid #ececec;
-
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 5px;
 }
 
 fieldset {
   border: none;
-  padding: 20px;
 }
 
 label {
@@ -167,19 +174,29 @@ label {
   align-items: flex-start;
   padding: 10px 0px;
   margin: 5px 0px;
-
 }
 
 input,
-textarea {
-  font-size: 16px;
-  border: 1px solid #ececec;
+textarea,
+select {
+  font-size: 15px;
+  font-family: 'Roboto';
+  border: 2px solid #000000;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   outline: none;
   padding: 10px;
   margin-top: 5px;
+  width: 300px;
+  appearance: none;
 }
 
+textarea {
+  max-width: 350px;
+}
 
+form h4 {
+  font-size: 20px;
+}
 
 /* footer */
 
@@ -249,6 +266,7 @@ i:hover {
   .projects {
     flex-direction: row;
   }
+
 }
 
 /* Tablet screen size */

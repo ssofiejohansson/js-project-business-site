@@ -11,6 +11,19 @@
     rel="stylesheet"
     href="css/style.css"
   >
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  >
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+  <link
+    href="https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Indie+Flower&family=Permanent+Marker&family=Preahvihear&family=Roboto:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light&family=Yanone+Kaffeesatz:wght@200..700&display=swap"
+    rel="stylesheet"
+  >
   <script
     src="https://kit.fontawesome.com/beb1bc6f21.js"
     crossorigin="anonymous"
@@ -22,13 +35,21 @@
 
   <header>
     <nav class="navbar">
-      <h1>Happy Hooks</h1>
+      <img
+        class="logo"
+        src="./img/logos/logo-cutout.png"
+        alt="Happy Hooks cutout logo in black"
+      >
+
       <div class="nav-links">
         <a href="#about"> <button class="button">About</button></a>
         <a href="#projects"> <button class="button">Projects</button></a>
+        <a href="#contact"> <button class="button">Contact</button></a>
         <a href="#https://easycrochet.com/crochet-for-beginners"> <button class="button">Beginner?</button></a>
       </div>
     </nav>
+
+    <!-- <h1>This is happy hooks</h1> -->
   </header>
 
   <main>
@@ -36,12 +57,14 @@
       <div class="grid-parent">
 
         <div class="grid-2 flex-container">
-          <h2>This is happy hooks</h2>
+          <h1>This is happy hooks</h1>
           <p>Where yarn meets imagination and anything is possible - except
             maybe knitting, we're not about that life. Whether you're a crochet newbie or a yarn wizard, this page is
-            packed with quirky designs, fun ideas, and all the inspiration needed to make your hook happy. Grab your
-            yarn,
-            get cozy, and let’s stitch up some creativity one stitch at a time! </p>
+            packed with quirky designs, fun ideas, and all the inspiration needed to make your hook happy.</p>
+          <p>Crochet is about more than just finished projects, it’s about the process: the slow rhythm of stitching,
+            the satisfaction of making something with your hands, and the freedom to create whatever you want. Whether
+            you’re here to learn, find fresh ideas, or just browse for inspiration, we’ve got you covered. Grab your
+            yarn, get cozy, and let’s stitch up some creativity one stitch at a time! </p>
 
           <a href="#about"> <button class="button">Read more</button></a>
         </div>
@@ -168,7 +191,7 @@
           >
         </div>
         <div class="project-text">
-          <h3>#1 - item name</h3>
+          <h4>#1 - item name</h4>
           <h4>Instructions</h4>
           <p> Step 1:</p>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -226,34 +249,60 @@
       class="form-section"
       id="contact"
     >
-      <p> Here will be a contact form to leave comments and feeback on the different projects.</p>
       <!-- Including: name, email, select what project (#1-#10), textarea etc. Same design as buttons on input fields. -->
 
       <form
         action="http://httpbin.org/anything"
         method="POST"
       >
+        <h2>Get in touch</h2>
         <fieldset>
-          <label>Name
+          <label>
+            <h4>What's your name?</h4>
             <input
               type="text"
               name="name"
               required
-            ></label>
-          <label>Email
+              placeholder="Name"
+            >
+          </label>
+          <label>
+            <h4>Tell me your email!</h4>
             <input
               type="text"
               name="email"
               required
-            ></label>
-          <label> Choose a project: #1-#10 <br> (Checkboxes or Radio buttons)
+              placeholder="Email"
+            >
+          </label>
+          <label>
+            <h4>What project??</h4>
+            <select
+              name="dropdown"
+              id="dropdown"
+              required
+            >
+              <option value="option">Choose a number</option>
+              <option value="1">#1</option>
+              <option value="2">#2</option>
+              <option value="3">#3</option>
+              <option value="4">#4</option>
+              <option value="5">#5</option>
+              <option value="6">#6</option>
+              <option value="7">#7</option>
+              <option value="8">#8</option>
+              <option value="9">#9</option>
+              <option value="10">#10</option>
 
+            </select>
 
           </label>
-          <label>Message
+          <label>
+            <h4>Leave feedback:</h4>
             <textarea
               type="text"
               required
+              placeholder="Your message"
             ></textarea>
           </label>
           <button
@@ -261,6 +310,7 @@
             type="submit"
           >Submit</button>
         </fieldset>
+
       </form>
 
 
