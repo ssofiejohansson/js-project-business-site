@@ -32,24 +32,39 @@
 </head>
 
 <body>
+  <nav class="navbar">
+    <img
+      class="logo"
+      src="./img/logos/logo.webp"
+      alt="Happy Hooks cutout logo in black"
+    >
 
-  <header>
-    <nav class="navbar">
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+  <header class="hero-container">
+    <div class="overlay"> </div>
+    <video
+      class="hero-video"
+      autoplay
+      muted
+      loop
+      playsinline
+    >
+      <source src="img/hero-vid.mp4"> Your browser doesn't support the video.
+    </video>
+
+    <div class="hero-heading">
       <img
-        class="logo"
-        src="./img/logos/logo-cutout.png"
+        class="main-logo"
+        src="./img/logos/logo-2.webp"
         alt="Happy Hooks cutout logo in black"
       >
+    </div>
 
-      <div class="nav-links">
-        <a href="#about"> <button class="button">About</button></a>
-        <a href="#projects"> <button class="button">Projects</button></a>
-        <a href="#contact"> <button class="button">Contact</button></a>
-        <a href="#https://easycrochet.com/crochet-for-beginners"> <button class="button">Beginner?</button></a>
-      </div>
-    </nav>
-
-    <!-- <h1>This is happy hooks</h1> -->
   </header>
 
   <main>
@@ -57,7 +72,11 @@
       <div class="grid-parent">
 
         <div class="grid-2 flex-container">
-          <h1>This is happy hooks</h1>
+          <h1>This is <img
+            class="logo"
+            src="./img/logos/logo.webp"
+            alt="Happy Hooks cutout logo in black"
+          ></h1>
           <p>Where yarn meets imagination and anything is possible - except
             maybe knitting, we're not about that life. Whether you're a crochet newbie or a yarn wizard, this page is
             packed with quirky designs, fun ideas, and all the inspiration needed to make your hook happy.</p>
@@ -74,7 +93,7 @@
           class="grid-3 flex-container card"
         >
           <a href="#project-1"><img
-              src="img/flower.jpg"
+              src="img/flower.webp"
               class="card-img"
             >
             <div class="container">
@@ -85,7 +104,7 @@
         </div>
         <div class="grid-3 flex-container card">
           <a href="#project-2"><img
-              src="img/cactus.jpg"
+              src="img/cactus.webp"
               class="card-img"
             >
             <div class="container">
@@ -96,7 +115,7 @@
         </div>
         <div class="grid-3 flex-container card">
           <img
-            src="img/coaster.jpg"
+            src="img/coaster.webp"
             class="card-img"
           >
           <div class="container">
@@ -106,7 +125,7 @@
         </div>
         <div class="grid-3 flex-container card">
           <img
-            src="img/potholder.jpg"
+            src="img/potholder.webp"
             class="card-img"
           >
           <div class="container">
@@ -116,7 +135,7 @@
         </div>
         <div class="grid-3 flex-container card">
           <img
-            src="img/cardigan.jpg"
+            src="img/cardigan.webp"
             class="card-img"
           >
           <div class="container">
@@ -126,7 +145,7 @@
         </div>
         <div class="grid-3 flex-container card">
           <img
-            src="img/christmas.jpg"
+            src="img/christmas.webp"
             class="card-img"
           >
           <div class="container">
@@ -136,7 +155,7 @@
         </div>
         <div class="grid-3 flex-container card">
           <img
-            src="img/granny-square.jpg"
+            src="img/granny-square.webp"
             class="card-img"
           >
           <div class="container">
@@ -146,7 +165,7 @@
         </div>
         <div class="grid-3 flex-container card">
           <img
-            src="img/west.jpg"
+            src="img/west.webp"
             class="card-img"
           >
           <div class="container">
@@ -156,7 +175,7 @@
         </div>
         <div class="grid-3 flex-container card">
           <img
-            src="img/bunny.jpg"
+            src="img/bunny.webp"
             class="card-img"
           >
           <div class="container">
@@ -166,7 +185,7 @@
         </div>
         <div class="grid-3 flex-container card">
           <img
-            src="img/gloves.jpg"
+            src="img/gloves.webp"
             class="card-img"
           >
           <div class="container">
@@ -177,7 +196,7 @@
 
 
       </div>
-    </section>
+    </section> 
 
     <section class="project-section">
       <div
@@ -186,13 +205,13 @@
       >
         <div class="project-img">
           <img
-            src="img/flower.jpg"
+            src="img/flower.webp"
             class="card-img"
           >
         </div>
         <div class="project-text">
-          <h4>#1 - item name</h4>
-          <h4>Instructions</h4>
+          <h3>#1 - item name</h3>
+          <h3>Instructions</h3>
           <p> Step 1:</p>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
           </p>
@@ -208,7 +227,7 @@
           <p> Step 5:</p>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis molestiae dolores est
             repellat asperiores itaque architecto animi.</p>
-          <a href="#contact"> <button class="button">Get in touch</button></a>
+          <a href="#contact"> <button class="button">Leave a comment</button></a>
 
         </div>
       </div>
@@ -219,13 +238,13 @@
       >
         <div class="project-img">
           <img
-            src="img/cactus.jpg"
+            src="img/cactus.webp"
             class="card-img"
           >
         </div>
         <div class="project-text">
           <h3>#2 - item name</h3>
-          <h4>Instructions</h4>
+          <h3>Instructions</h3>
           <p> Step 1:</p>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
           </p>
@@ -238,10 +257,12 @@
           <p> Step 4:</p>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis molestiae dolores est
             repellat asperiores itaque architecto animi.</p>
-          <a href="#contact"> <button class="button">Get in touch</button></a>
+          <a href="#contact"> <button class="button">Leave a comment</button></a>
 
         </div>
       </div>
+
+
 
     </section>
 
@@ -321,11 +342,18 @@
   <footer>
     <div id="about">
       <h4>About</h4>
-      <p><b>Happy Hooks</b> is all about inspiring creativity through the art of crochet. Each piece is crafted with
+      <p>Happy Hooks is all about inspiring creativity through the art of crochet. Each piece is crafted with
         care to showcase unique designs and techniques, offering ideas for your own handmade creations. From cozy
         blankets to delicate accessories, the goal is to inspire and spark your imagination.</p>
       <p>This space is dedicated to sharing crochet art and providing guidance for those looking to explore the craft.
         Explore the beauty of crochet, and find inspiration to bring your own creations to life.</p>
+
+      <img
+        class="logo"
+        src="./img/logos/logo-2.webp"
+        alt="Happy Hooks cutout logo in black"
+      >
+
     </div>
 
     <div class="icons">
