@@ -11,22 +11,13 @@ html {
     opacity: 0;
   }
   100% {
-    opacity: 0.9;
+    opacity: 0.8;
   }
 }
 
 body {
   margin: 0 auto;
 }
-
-/* 
-header {
-  background-image: url('/img/hero.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 40vh;
-} */
 
 .hero-container {
   position: relative;
@@ -64,7 +55,7 @@ nav {
 }
 
 .main-logo{
-  width: 180px;
+  width: 140px;
   opacity: 0; 
   animation: fadeIn 3s ease-in forwards;
 }
@@ -189,7 +180,6 @@ a {
   font-size: 30px;
   text-shadow: none;
   margin: 0;
-  
 }
 
 /* Last section with the form */
@@ -301,6 +291,10 @@ i:hover {
 
   .hero-container {
     height: 60vh;
+  }
+
+  .main-logo{
+    width: 200px;
   }
 
   .card-section {
