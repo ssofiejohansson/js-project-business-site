@@ -211,6 +211,7 @@ select {
   color: #000;
   font-family: 'Roboto';
   border: 2px solid #000000;
+  border-radius: none;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   outline: none;
   padding: 10px;
