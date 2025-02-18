@@ -1,1 +1,0 @@
-document.getElementById('navBar').style.backgroundColor = 'white'
