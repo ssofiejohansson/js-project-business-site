@@ -4,7 +4,7 @@
   }
 
   100% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 }
 
@@ -162,7 +162,6 @@ a {
 
 /* First part of page with cards */
 
-/* makes the parent container a grid */
 .grid-parent {
   padding: 20px 20px 40px;
   display: grid;
@@ -180,7 +179,6 @@ a {
   grid-column: span 2;
 }
 
-/* using flex within the card container */
 .flex-container {
   display: flex;
   flex-direction: column;
@@ -313,10 +311,6 @@ i:hover {
 
 @media (min-width: 668px) and (max-width: 1024px) {
 
-  .hero-video {
-    width: auto;
-  }
-
   .hero-container {
     height: 40vh;
   }
@@ -346,7 +340,6 @@ i:hover {
   .project-img {
     flex: 2;
   }
-
 }
 
 /* Desktop screen size */
@@ -372,7 +365,6 @@ i:hover {
 
   .hero-video {
     width: 100%;
-    height: auto;
   }
 
   .hero-container {
@@ -389,7 +381,6 @@ i:hover {
 
   .grid-parent {
     grid-template-columns: repeat(12, 1fr);
-
   }
 
   .grid-2 {
@@ -398,10 +389,6 @@ i:hover {
 
   .grid-3 {
     grid-column: span 3;
-  }
-
-  footer p {
-    width: 50%;
   }
 
   .projects {
@@ -416,8 +403,12 @@ i:hover {
     flex: 2;
   }
 
+  footer p {
+    width: 50%;
+  }
 }
 
+/* To make the site look good on larger screens the content stays within 1200px*/
 @media (min-width: 1201px) {
 
   .card-section,
